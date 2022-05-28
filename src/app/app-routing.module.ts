@@ -3,13 +3,9 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-<<<<<<< Updated upstream
     path: 'user',
     loadChildren: () => import('./user/user.module').then(m => m.UserModule)
-=======
-    path: 'users',
-    loadChildren: () => import('./users/users.module').then(m => m.UsersModule)
->>>>>>> Stashed changes
+
   },
   {
     path: 'dashboard',

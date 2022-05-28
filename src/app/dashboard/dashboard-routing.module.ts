@@ -4,11 +4,7 @@ import { DashboardComponent } from './dashboard.component';
 
 const routes: Routes = [
   {
-<<<<<<< Updated upstream
     path:'',
-=======
-    path: '',
->>>>>>> Stashed changes
     component: DashboardComponent
   },
   {
