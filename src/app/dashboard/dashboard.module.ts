@@ -14,12 +14,8 @@ import { Component3Component } from './component3/component3.component';
     Component3Component
   ],
   imports: [
-<<<<<<< Updated upstream
     CommonModule,
     DashboardRoutingModule
-=======
-    CommonModule
->>>>>>> Stashed changes
   ]
 })
 export class DashboardModule { }

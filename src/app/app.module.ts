@@ -5,14 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './shared/material.module';
-<<<<<<< Updated upstream
 import { UserComponent } from './user/user.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-=======
-import { UsersComponent } from './users/users.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { RouterModule } from '@angular/router';
->>>>>>> Stashed changes
 
 @NgModule({
   declarations: [
