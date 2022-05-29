@@ -1,11 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { UsersComponent } from './users.component';
+import { PlansComponent } from './plans.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: UsersComponent
+    component: PlansComponent
+  },
+  {
+    path: ':id/todo',
+    loadChildren: () => import('./todo/todo.module').then(m => m.TodoModule)
   }
 ];
 
@@ -13,4 +17,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class UsersRoutingModule { }
+export class PlansRoutingModule { }

@@ -1,4 +1,4 @@
-<table mat-table [dataSource]="users" class="table">
+<table mat-table [dataSource]="userPlans" class="table">
 
     <ng-container matColumnDef="id">
         <th mat-header-cell *matHeaderCellDef class="table-header"> Id </th>
@@ -7,18 +7,18 @@
         </td>
     </ng-container>
 
-    <ng-container matColumnDef="name">
-        <th mat-header-cell *matHeaderCellDef class="table-header"> Name </th>
+    <ng-container matColumnDef="title">
+        <th mat-header-cell *matHeaderCellDef class="table-header"> Title </th>
         <td mat-cell *matCellDef="let element" class="table-element">
-            {{element.name}}
+            {{element.title}}
         </td>
     </ng-container>
 
-    <ng-container matColumnDef="plans">
+    <ng-container matColumnDef="todo">
         <th mat-header-cell *matHeaderCellDef> plans </th>
         <td mat-cell *matCellDef="let element">
-            <a class="btn-table" mat-flat-button color="accent" [routerLink]="[element.id, 'plans']">
-                Plans
+            <a class="btn-table" mat-flat-button color="accent" routerLinkActive="selected-link" [routerLink]="['.',  element.id, 'todo']">
+                Todo
             </a>
         </td>
     </ng-container>

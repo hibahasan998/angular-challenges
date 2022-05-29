@@ -6,6 +6,10 @@ const routes: Routes = [
   {
     path:'',
     component: UserComponent
+  },
+  {
+    path: ':id/plans',
+    loadChildren: () => import('./plans/plans.module').then(m => m.PlansModule)
   }
 ];
 
